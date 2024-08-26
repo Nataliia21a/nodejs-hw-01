@@ -5,7 +5,6 @@ import { getAllContacts } from './getAllContacts.js';
 
 export const addOneContact = async () => {
   const allContacts = await getAllContacts();
-  //   console.log(allContacts);
 
   const newcontact = createFakeContact();
   allContacts.push(newcontact);

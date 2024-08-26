@@ -4,13 +4,10 @@ import { createFakeContact } from '../utils/createFakeContact.js';
 
 const generateContacts = async (number) => {
   const contactsList = JSON.parse(await fs.readFile(PATH_DB, 'utf-8'));
-  console.log('contactList', contactsList);
 
   const newContactsList = Array(number)
     .fill(0)
     .map(() => createFakeContact());
-
-  console.log(newContactsList);
 
   contactsList.push(...newContactsList);
   //   const allContacts = [...contactsList, ...newContactsList];
