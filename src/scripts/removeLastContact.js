@@ -1,5 +1,5 @@
 import { PATH_DB } from '../constants/contacts.js';
-import { getAllContacts } from './getAllContacts.js';
+import { getAllContacts } from '../utils/getAllContacts.js';
 import fs from 'node:fs/promises';
 
 export const removeLastContact = async () => {
